@@ -1,0 +1,91 @@
+netlab_list_reser:
+  path: 'lab/reservation/list'
+  defaults:
+    _controller: '\Drupal\netlab\Controller\NetlabController::list_reservations'
+    _title: 'Reservation list'
+  requirements:
+    _permission: 'access content'
+netlab_reservation:
+  path: 'lab/reservation/new'
+  defaults:
+    _title: 'New reservation'
+    _form: '\Drupal\netlab\Form\DoReservation'
+  requirements:
+    _permission: 'access content'
+netlab_edit_reser:
+  path: 'lab/reservation/edit'
+  defaults:
+    _title: 'Edit reservation'
+    _form: '\Drupal\netlab\Form\EditReservation'
+  requirements:
+    _permission: 'access content'
+netlab_delete_reservations:
+  path: 'lab/reservation/delete'
+  defaults:
+    _title: 'Delete reservations'
+    _form: '\Drupal\netlab\Form\DeleteReservation'
+  requirements:
+    _permission: 'access content'
+netlab_list_topo:
+  path: 'lab/topology/list'
+  defaults:
+    _controller: '\Drupal\netlab\Controller\NetlabController::list_topologies'
+    _title: 'Topology list'
+  requirements:
+    _permission: 'access content'
+netlab_start_topo:
+  path: 'lab/topology/start'
+  defaults:
+    _form: '\Drupal\netlab\Form\StartTopology'
+    _title: 'Start topology'
+  requirements:
+    _permission: 'access content'
+netlab_stop_topo:
+  path: 'lab/topology/stop'
+  defaults:
+    _form: '\Drupal\netlab\Form\StopTopology'
+    _title: 'Stop Topology'
+  requirements:
+    _permission: 'access content'
+netlab_configure:
+  path: 'lab/topology/configure'
+  defaults:
+    _controller: '\Drupal\netlab\Controller\NetlabController::conf_topo'
+    _title: 'Configuring'
+  requirements:
+    _permission: 'access content'
+netlab_list_run:
+  path: 'lab/topology/running'
+  defaults:
+    _controller: '\Drupal\netlab\Controller\NetlabController::list_running'
+    _title: 'Running topologies'
+  requirements:
+    _permission: 'access content'
+netlab_dashboard:
+  path: 'lab/dashboard'
+  defaults:
+    _controller: '\Drupal\netlab\Controller\NetlabController::dashboard'
+    _title: 'Dashboard'
+  requirements:
+    _permission: 'access content'
+netlab_new_topology:
+  path: 'lab/topology/new'
+  defaults:
+    _form: '\Drupal\netlab\Form\DoTopology'
+    _title: 'New topology'
+  requirements:
+    _permission: 'netlab_new_delete_topology'
+netlab_edit_topo:
+  path: 'lab/topology/edit'
+  defaults:
+    _form: '\Drupal\netlab\Form\EditTopology'
+    _title: 'Edit topology'
+  requirements:
+    _permission: 'access content'
+netlab_delete_topo:
+  path: 'lab/topology/delete'
+  defaults:
+    _form: '\Drupal\netlab\Form\DeleteTopology'
+    _title: 'Delete topology'
+  requirements:
+    _permission: 'netlab_new_delete_topology'

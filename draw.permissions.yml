@@ -1,0 +1,4 @@
+netlab_new_delete_topology:
+  title: 'Add and delete topology'
+  description: 'Allows this group of users to add and delete topology'
+  restrict access: true

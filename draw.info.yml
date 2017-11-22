@@ -1,0 +1,6 @@
+name: Draw
+type: module
+description: Draw - Drupal module to draw who  is gonna get gift from who
+core: 8.x
+package: Other
+version: 0.1
